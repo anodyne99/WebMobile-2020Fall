@@ -1,0 +1,14 @@
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 220px;
+    width: 220px;
+}
+
+.cell {
+    flex: 0 0 32%;
+    height: 70px;
+    width: 70px;
+    margin-bottom: 5px;
+}
