@@ -1,2 +1,2 @@
-# TODO
-This readme will be updated as necessary when the assignment is known and made
+# ICP 5
+This ICP was focused on teaching us about angular and local servers.
