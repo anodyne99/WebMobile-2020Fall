@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html data-ng-app="todo">
+  <head>
+    <meta charset="UTF-8">
+    <title>Todo List</title>
+  </head>
+  <body>
+    <div class = "container-fluid"> <!-- adjusts the size of the container as necessary -->
+      <div class = "row">
+        <div class = "col-12">
+          <h1>Todo List</h1> <!-- centered title header -->
+        </div>
+      </div>
+      <div class = "col-12">
+          <h2>Click Any Item to Cross it Off</h2> <!-- centered second header with instructions -->
+      </div>
+      <div class= "row" style = height:50px></div>
+      <div class ="row" >
+        <div class = "col-12">
+            <div class = "input-group w-50 mx-auto">
+              <!-- node creation -->
+              <input [(ngModel)]="newEntry" type="text" class="form-control" name="newEntry">
+              <div class= "input-group-btn">
+                <button (click)="submitNewItem()" class = "btn btn-success"> <!-- button press for node creation -->
+                        ADD
+                </button>
+              </div>
+              <!-- end node creation -->
+            </div>
+        </div>
+      </div>
+      <ul id = list>
+        <!-- starts the creation loop with ng functionality to keep adding items as long as the site is open -->
+        <li *ngFor="let x of items; let i = index" class = "row" style = "height:100px;">
+          <!-- lots of fiddling and formatting below -->
+          <div class = "w-75 mx-auto d-flex align-items-center">
+            <span class = "col-12">
+              <!-- I wanted to figure out how to make it trigger upon pressing anything else in the container BUT the button -->
+              <h3 (click) = "completeItem(x, i)">
+                <!-- pressing the big red x button to the left of the listing will delete it from the items list -->
+                <input (click) = "deleteItem(i)" type = "button" value = "X" class = "col-.5 btn btn-danger" style = "position: absolute; left: 0"/>
+                <span>{{x}}</span>
+              </h3>
+            </span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
