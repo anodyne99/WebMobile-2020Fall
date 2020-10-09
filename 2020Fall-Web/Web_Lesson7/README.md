@@ -1,2 +1,2 @@
-# TODO
-This readme will be updated as necessary when the assignment is known and made
+# ICP 7
+This ICP was focused on demonstrating and implementing the MEAN stack structure
