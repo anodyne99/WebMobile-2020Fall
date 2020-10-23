@@ -1,2 +1,2 @@
-# TODO
-This readme will be updated as necessary when the assignment is known and made
+# ICP 8
+This assignment was primarily to explain the basics of Android mobile development and layout design
