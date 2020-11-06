@@ -1,2 +1,2 @@
-# TODO
-This readme will be updated as necessary when the assignment is known and made
+# ICP 10
+This ICP was primarily about calling APIs and parsing JSONs
