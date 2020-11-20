@@ -1,2 +1,2 @@
-# TODO
-This readme will be updated as necessary when the assignment is known and made
+# ICP12
+This ICP was focused on Firebase and SQLite implementation
